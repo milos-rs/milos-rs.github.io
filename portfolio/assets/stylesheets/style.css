@@ -1,0 +1,256 @@
+:root {
+    --main-blue: #252934;
+    --dark-blue: #1E242C;
+    --light-blue: #8F9AA7;
+    --night-blue: #1B242F;
+    --highlight-cyan: #04C2C9;
+    --highlight-pink: #E31B6D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-blue);
+    color: #FFF;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    height: 80%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+a {
+    color: #FFF;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease-out;
+}
+
+a:hover {
+    color: var(--highlight-cyan);
+    border-color: var(--highlight-cyan);
+}
+
+.btn {
+    display: block;
+    border: 1px solid white;
+    width: 9rem;
+    padding: .8rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    justify-content: space-evenly;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    overflow: hidden;
+    bottom: -3.5rem;
+    background: var(--dark-blue);
+}
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    bottom: inherit;
+    border-bottom: 1px solid var(--highlight-cyan);
+}
+
+.navlinks {
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    padding: 1rem;
+    width: 100%;
+}
+
+.navlinks a {
+    padding: 2.5rem;
+}
+
+
+
+/* HOME SECTION */
+
+#welcome { font-size: 3rem; }
+.hl1 { color: var(--highlight-cyan); }
+.hl2 { color: var(--highlight-pink); }
+
+/* WORK SECTION */
+
+#work {
+    padding-top: 7rem;
+}
+
+.projects-grid {
+    padding-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    width: 100%;
+    max-width: 1280px;
+}
+
+.project {
+    background: var(--night-blue);
+    padding-bottom: 1.5rem;
+}
+
+.project-thumbnail {
+    height: calc(100% - 1.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.code-brackets { 
+    color: var(--dark-blue);
+    transition: color 0.3s ease-out;
+}
+
+.project:hover .code-brackets {
+    color: var(--highlight-cyan);
+}
+
+.project:hover .project-title {
+    color: var(--highlight-pink);
+}
+
+.project-title { padding-top: 1rem; }
+
+/* CONTACT SECTION */
+
+#contact {
+    position: relative;
+    bottom: 4rem;
+    
+}
+
+#contact > .section-title {
+    position: relative;
+    bottom: 4.5rem;
+}
+
+
+
+.contact-form {
+    width: 32rem;
+}
+
+#contact>p {
+    padding-bottom: 2.2rem;
+}
+
+/* TODO: REFACTOR !!! */
+
+.contact-form > input {
+    background: var(--dark-blue);
+    color: #FFF;
+    width: 32rem;
+    border: 0;
+    padding: 1rem;
+    margin: .2rem;
+}
+
+.contact-form > textarea {
+    background: var(--dark-blue);
+    color: #FFF;
+    width: 32rem;
+    border: 0;
+    padding: 1rem;
+    margin: .2rem;
+}
+
+input[type=submit] {
+    width: 10rem;
+    align-self: flex-end;
+    border: 1px solid rgba(255, 255, 255, .3);
+    color: rgba(255, 255, 255, .3);
+    transition: color 0.3s ease-out;
+}
+
+input[type=submit]:hover {
+    border-color: var(--highlight-cyan);
+    color: var(--highlight-cyan);
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--night-blue);
+    color: rgba(255, 255, 255, .32);
+    width: 100%;
+    padding-bottom: 1.5rem;
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+}
+
+#contact-links {
+    background: var(--night-blue);
+    flex-direction: row;
+    width: 100%;
+}
+
+.icon {
+    font-size: 4rem;
+    padding: 1.2rem;
+}
+
+/* TYPOGRAPHY */
+
+.section-title {
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    font-size: 2rem;
+}
+
+#copyright {
+    text-transform: uppercase;
+    font-size: .85rem;
+}
+
+/* SCROLL BAR */
+
+/* width */
+::-webkit-scrollbar {
+    width: .7rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--night-blue); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--highlight-pink);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--highlight-cyan); 
+  }

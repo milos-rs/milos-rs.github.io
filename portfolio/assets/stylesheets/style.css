@@ -20,6 +20,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     height: 80%;
+    overflow-x: hidden;
 }
 
 .flex {
@@ -55,6 +56,7 @@ a:hover {
 section {
     width: 100%;
     min-height: 100vh;
+    position: relative;
 }
 
 /* NAVBAR */
@@ -100,6 +102,7 @@ section {
 #welcome { font-size: 3rem; }
 .hl1 { color: var(--highlight-cyan); }
 .hl2 { color: var(--highlight-pink); }
+.intro-text { position: absolute; }
 
 /* WORK SECTION */
 
@@ -253,4 +256,15 @@ footer {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: var(--highlight-cyan); 
+  }
+
+  /* CANVAS */
+
+  .canvas {
+    /* background: url("../img/filler.png") center center/cover; */
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
   }

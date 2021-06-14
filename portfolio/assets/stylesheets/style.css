@@ -280,6 +280,6 @@ footer {
   /* MEDIA QUERIES */
 
   @media screen and (max-width: 800px) {
-      .navlinks { flex-direction: column; }
-      .contact-form { width: 100%; }
+      .navlinks { flex-direction: column; flex-flow: column wrap; }
+      .navlinks li a { padding: 0; }
   }

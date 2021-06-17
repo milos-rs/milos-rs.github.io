@@ -145,6 +145,20 @@ section {
 
 .project-title { padding-top: 1rem; }
 
+/* ABOUT SECTION */
+
+.container {
+    flex-direction: row;
+}
+
+.chardesc {
+    padding: 2rem;
+}
+
+.chardesc > i {
+    font-size: 4rem;
+}
+
 /* CONTACT SECTION */
 
 #contact {

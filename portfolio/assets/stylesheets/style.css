@@ -244,6 +244,7 @@ footer {
     text-transform: uppercase;
     border-bottom: 1px solid white;
     font-size: 2rem;
+    margin-bottom: 6.5rem;
 }
 
 .project-title { text-transform: lowercase; }

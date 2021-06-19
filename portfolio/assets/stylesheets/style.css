@@ -147,9 +147,27 @@ section {
 
 /* ABOUT SECTION */
 
-.container {
-    flex-direction: row;
+#introduction {
+    width: 100%;
 }
+
+#info {
+    padding: 1rem;
+    width: 100%;
+}
+
+h3 {
+    padding-bottom: 1rem;
+}
+
+#skills {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+
+.flex-row { flex-direction: row; }
+.flex-col { flex-direction: column; }
 
 .chardesc {
     padding: 2rem;
@@ -157,6 +175,41 @@ section {
 
 .chardesc > i {
     font-size: 4rem;
+}
+
+#avatar-img {
+    height: 16rem;
+    width: auto;
+    padding: 1.5rem;
+    
+}
+
+.progress-bar {
+    width: 36rem;
+    background: var(--night-blue);
+    margin: .5rem;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.progress-bar-fill {
+    width: 90%;
+    background: var(--highlight-cyan);
+    justify-content: flex-start;
+}
+
+.tag {
+    font-weight: bold;
+    height: auto;
+    background: var(--highlight-pink);
+    width: 7.5rem;
+    padding-bottom: .1rem;
+}
+
+.bar-percentage {
+    justify-self: flex-end;
+    width: 4rem;
+    
 }
 
 /* CONTACT SECTION */
@@ -295,5 +348,7 @@ footer {
   /* MEDIA QUERIES */
 
   @media screen and (max-width: 800px) {
-      #navbar { display: none; }
+    .navbar { display: none }
+    .navlinks { flex-direction: column; flex-flow: column wrap; }
+    .navlinks li a { padding: 0; }
   }

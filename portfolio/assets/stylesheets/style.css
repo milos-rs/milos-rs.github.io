@@ -37,7 +37,8 @@ a {
     font-size: 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
-    transition: color 0.3s ease-out;
+    transition: color 0.66s ease-out;
+    
 }
 
 a:hover {
@@ -171,10 +172,16 @@ h3 {
 
 .chardesc {
     padding: 2rem;
+    transition: color 0.3s ease-out;
+}
+
+.chardesc:hover {
+    color: var(--highlight-cyan);
 }
 
 .chardesc > i {
     font-size: 4rem;
+    
 }
 
 #avatar-img {

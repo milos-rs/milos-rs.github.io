@@ -37,7 +37,8 @@ a {
     font-size: 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
-    transition: color 0.66s ease-out;
+    transition: color 0.66s ease-out,
+                border-color .66s ease-out;
     
 }
 
@@ -267,7 +268,8 @@ input[type=submit] {
     align-self: flex-end;
     border: 1px solid rgba(255, 255, 255, .3);
     color: rgba(255, 255, 255, .3);
-    transition: color 0.3s ease-out;
+    transition: color 0.66s ease-out,
+                border-color .66s ease-out;
 }
 
 input[type=submit]:hover {
